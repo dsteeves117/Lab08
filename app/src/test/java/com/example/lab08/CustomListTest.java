@@ -37,13 +37,13 @@ public class CustomListTest {
         list.addCity(toronto);
 
         // check that there are 2 cities in list
-        assertEquals(2, list.countCities);
+        assertEquals(2, list.countCities());
 
         // delete a city
         list.deleteCity(toronto);
 
         // check that it still works after deleting city
-        assertEquals(1, list.countCities);
+        assertEquals(1, list.countCities());
     }
 
 }
